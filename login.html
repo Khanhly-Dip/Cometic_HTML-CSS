@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Login</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .auth-container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            width: 400px;
+            text-align: center;
+        }
+
+        .auth-container h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .form-group label {
+            /* margin-bottom: 8px;   */
+            color: #555;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 8px 12px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-top: 8px;
+            margin-bottom: 20px;
+            font-size: 16px
+        }
+
+        .form-group button {
+            width: 100%;
+            padding: 12px;
+            box-sizing: border-box;
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .form-group button:hover {
+            background-color: #45a049;
+        }
+
+        .form-group a {
+            margin-top: 10px;
+            color: #007BFF;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .auth-container p {
+            margin-top: 20px;
+            color: #777;
+        }
+        .error-message {
+            color: red;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="auth-container">
+        <h2>Đăng Nhập</h2>
+        <form id="loginForm" action="Product.html" method="post">
+            <div class="form-group">
+                <label for="username">Tên Đăng Nhập:</label>
+                <input type="text" id="username" name="username" required>
+                <div id="usernameError" class="error-message"></div>
+            </div>
+            <div class="form-group">
+                <label for="password">Mật Khẩu:</label>
+                <input type="password" id="password" name="password" required>
+                <div id="passwordError" class="error-message"></div>
+            </div>
+            <div class="form-group">
+                <button type="button" onclick="validateLogin()">Đăng Nhập</button>
+            </div>
+            <div class="form-group">
+                <a href="forgot-password.html">Quên mật khẩu?</a>
+                <p style="font-size: 12px;">Nếu bạn chưa có tài khoản, hãy <a href="register.html"><u>Đăng ký ngay</u></a></p>
+            </div>
+        </form>
+    
+        <script>
+            function validateLogin() {
+                
+                var username = document.getElementById('username').value;
+                var password = document.getElementById('password').value;
+    
+                
+                document.getElementById('usernameError').textContent = '';
+                document.getElementById('passwordError').textContent = '';
+
+                
+                if (document.getElementById('usernameError').textContent === '' && document.getElementById('passwordError').textContent === '') {
+                
+            }
+    
+                
+                if (username.trim() === '') {
+                    document.getElementById('usernameError').textContent = 'Vui lòng nhập tên đăng nhập.';
+                    return;
+                }
+    
+                if (password.trim() === '') {
+                    document.getElementById('passwordError').textContent = 'Vui lòng nhập mật khẩu.';
+                    return;
+                }
+                document.getElementById('loginForm').submit();
+                window.location.href = 'Product.html';
+
+            }
+        </script>
+    </div>
+    
+    </body>
+    </html>

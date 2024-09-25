@@ -1,0 +1,243 @@
+.container-banner__img{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.container-banner__img img{
+    height: 400px;
+}
+.best_lip{
+    margin-bottom: 50px;
+}
+
+/* Chi tiết sản phẩm */
+.container_product{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.container_product--img img{
+    width: 400px;
+    height: 600px;
+}
+.container_product--infor{
+    width: 630px;
+    margin-top: 30px;
+    padding-left: 50px;    
+}
+.infor_title--price,
+.product_infor--vote{
+    display: flex;
+    padding: 18px 0;
+}
+.vote{
+    color: #f85134;
+    font-size: 18px;
+    line-height: 36px;
+    padding-right: 6px;
+}
+.star{
+    color: #ccc;
+}
+.star:hover{
+    cursor: pointer;
+    color: #f85134;
+}
+.vote--buy{
+    font-size: 22px;
+    margin-left: 12px;
+    padding-left: 12px;
+    line-height: 36px;
+    border-left: 1px solid #ccc;
+}
+.infor_whistlist i{
+    font-size: 24px;
+    line-height: 34px;
+    margin-left: 12px;
+    padding-left: 16px;
+    border-left: 1px solid #ccc ;
+}
+.infor_whistlist i:hover{
+    cursor: pointer;
+    color: #f85134;
+}
+.price--old{
+    font-size: 18px;
+    color: rgb(97, 97, 97);
+    text-decoration: line-through;
+    margin-right: 28px;
+    line-height: 48px;
+}
+.price--present{
+    font-size: 32px;
+    color: #f85134;
+}
+
+.infor_kind{
+    display: flex;
+    padding: 20px 0;
+    margin-bottom:24px ;
+    border-top: 1px solid #ebe8e8;
+    border-bottom: 1px solid #ebe8e8;
+}
+.infor_kind label{
+    padding-right: 24px;
+    line-height: 40px;
+}
+.infor_kind_lip img{
+    width: 30px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-right: 4px;
+}
+.infor_kind_lip img:hover{
+    cursor: pointer;
+    border-color: #f85134;
+}
+
+.infor_quality{
+    display: flex;
+    font-size: 20px;
+}
+.infor_quality--but button{
+    font-size: 24px;
+    padding: 2px 6px;
+    background-color: #ffffff;
+    border: 1px solid #f5eded;
+    width: 32px;
+    border-radius: 3px;
+}
+.infor_quality--but input{
+    border: 1px solid #f5eded;
+    width: 30px;
+    font-size: 24px;
+    padding: 2px 2px 2px 8px;
+    width: 60px;
+    border-radius: 3px;
+}
+.infor_quality--price{
+    font-size: 16px;
+    line-height: 52px;
+    padding-left: 20px;
+}
+.infor__buy_whistlist{
+    display: flex;
+    margin: 20px 0;
+}
+.infor_cart button{
+    font-size: 18px;
+    background-color: #eb3c1d;
+    border: 1px solid #f85134;
+    padding: 10px 16px;
+    border-radius: 3px;
+    /* box-shadow: 0 2px 3px rgba(0,0,0,0.2); */
+}
+.infor_cart button a{
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 10px 10px;
+}
+.infor_cart button:first-child{
+    background-color: #fff;
+    color: #f85134;
+    margin-right: 24px;
+}
+.infor_cart button:hover{
+    background-color: #f75a3e;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+.infor_cart button:first-child:hover{
+    color: rgb(255, 0, 0);
+    background-color: #fff;
+}
+.container_decreption{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    padding-top: 40px;
+}
+.container_decreption ul{
+    width: 90%;
+}
+.container_decreption label{
+    /* font-size: 18px; */
+    font-weight: 600;
+    padding-right: 4px;
+    
+}
+
+.container_decreption li{
+    display: flex;
+    font-size: 18px;
+    line-height: 24px;
+    color: #555555;
+    /* width: 1250px; */
+    margin: 6px 0;
+}
+
+.container_decreption img{
+    margin-top: 30px;
+    width: 100%;
+}
+.proc_feal{
+    padding-left: 50px !important;
+    padding: 60px 0 26px 0;
+}
+.container_Vote{
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 90px 40px;
+}
+
+.Danh_Gia_SP{
+    display: flex;
+}
+.Danh_Gia_Vote label{
+    font-size: 40px;
+    /* font-weight: 550; */
+    color: #f85134;
+    margin-right: 20px;
+}
+.Icon_star i{
+    color: #f75a3e;
+    font-size: 18px;
+    padding-bottom: 4px;
+}
+.Icon_star i:last-child{
+    color: #ccc;
+}
+.Icon_star i:hover{
+    cursor: pointer;
+    color: #f85134;
+}
+.Vote_DanhGia input{
+    font-size: 18px;
+    width: 600px;
+    padding: 10px 8px 8px 12px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+.danhGia_but{
+    display: flex;
+    justify-content: flex-end;
+}
+.danhGia_but button{
+    font-size: 18px;
+    padding: 4px 6px;
+    line-height: 20px;
+    border: 1px solid #f74c00;
+    color: #f0f0f0;
+    background-color: #f74c00;
+    border-radius: 3px;
+    margin: 8px 2px;
+    /* width: 100%; */
+}
+/* .img--load{
+    background-image: url(./img/banner3.jpg);
+    width: 100px;
+    height: 100px;
+} */
